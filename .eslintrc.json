@@ -34,6 +34,7 @@
 		"react-hooks/exhaustive-deps": "warn",
 		"react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
 		"react/jsx-indent": [2, "tab"],
+		"react/jsx-indent-props": [2, "tab"],
 		"import/prefer-default-export": "off",
 		"import/extensions": [
 			"error",
