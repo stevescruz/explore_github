@@ -36,6 +36,48 @@
 		"react/jsx-indent": [2, "tab"],
 		"react/jsx-indent-props": [2, "tab"],
 		"import/prefer-default-export": "off",
+		"camelcase": "off",
+		"@typescript-eslint/naming-convention": [
+			"error",
+			{
+				"selector": "default",
+				"format": ["camelCase"]
+			},
+
+			{
+				"selector": "variable",
+				"format": ["camelCase", "PascalCase"]
+			},
+			{
+				"selector": "parameter",
+				"format": ["camelCase"],
+				"leadingUnderscore": "allow"
+			},
+
+			{
+				"selector": "memberLike",
+				"modifiers": ["private"],
+				"format": ["camelCase"],
+				"leadingUnderscore": "require"
+			},
+
+			{
+				"selector": "typeLike",
+				"format": ["PascalCase"]
+			},
+
+			{
+				"selector": "property",
+				"format": ["snake_case"]
+			}
+
+		],
+		"@typescript-eslint/explicit-function-return-type": [
+			"error",
+			{
+				"allowExpressions": true
+			}
+		],
 		"import/extensions": [
 			"error",
 			"ignorePackages",
