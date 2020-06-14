@@ -68,7 +68,7 @@
 
 			{
 				"selector": "property",
-				"format": ["snake_case"]
+				"format": ["camelCase", "snake_case"]
 			}
 
 		],
