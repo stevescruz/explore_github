@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import api from '../../services/api';
 
 import logoImg from '../../assets/logo.svg';
 
@@ -10,8 +11,41 @@ interface RepositoryParams {
 	repository: string;
 }
 
+interface Repository {
+	full_name: string;
+	description: string;
+	owner: {
+		login: string;
+		avatar_url: string;
+	};
+	stargazers_count: number;
+	forks_count: number;
+	open_issues_count: string;
+}
+
+interface Issue {
+	id: string;
+	title: string;
+	html_url: string;
+	user: {
+		login: string;
+	};
+}
+
 const Repository: React.FC = () => {
+	const [repository, setRepository] = useState<Repository | null>(null);
+	const [issues, setIssues] = useState<Issue[]>([]);
+
 	const { params } = useRouteMatch<RepositoryParams>();
+
+	useEffect(() => {
+		api.get(`/repos/${params.repository}`).then(res => {
+			setRepository(res.data);
+		});
+		api.get(`/repos/${params.repository}/issues`).then(res => {
+			setIssues(res.data);
+		});
+	}, [params.repository]);
 
 	return (
 		<>
@@ -22,40 +56,46 @@ const Repository: React.FC = () => {
 					Back
 				</Link>
 			</Header>
-			<RepositorySummary>
-				<header>
-					<img
-						src="https://avatars3.githubusercontent.com/u/60204789?s=460&u=dfa937c94e27d06e251e8dbc076c94110d4641aa&v=4"
-						alt="Steve Cruz"
-					/>
-					<div>
-						<strong>stevescruz/explore_github</strong>
-						<p>Repository description</p>
-					</div>
-				</header>
-				<ul>
-					<li>
-						<strong>2008</strong>
-						<span>Stars</span>
-					</li>
-					<li>
-						<strong>17</strong>
-						<span>Forks</span>
-					</li>
-					<li>
-						<strong>322</strong>
-						<span>Open issues</span>
-					</li>
-				</ul>
-			</RepositorySummary>
+			{repository && (
+				<RepositorySummary>
+					<header>
+						<img
+							src={repository.owner.avatar_url}
+							alt={repository.owner.login}
+						/>
+						<div>
+							<strong>{repository.full_name}</strong>
+							<p>{repository.description}</p>
+						</div>
+					</header>
+					<ul>
+						<li>
+							<strong>{repository.stargazers_count}</strong>
+							<span>Stars</span>
+						</li>
+						<li>
+							<strong>{repository.forks_count}</strong>
+							<span>Forks</span>
+						</li>
+						<li>
+							<strong>{repository.open_issues_count}</strong>
+							<span>Open issues</span>
+						</li>
+					</ul>
+				</RepositorySummary>
+			)}
 			<Issues>
-				<Link to="test">
-					<div>
-						<strong>explore-github-duplicate-values-not-handled</strong>
-						<p>Steve Cruz</p>
-					</div>
-					<FiChevronRight size={20} />
-				</Link>
+				{issues.map(issue => {
+					return (
+						<a key={issue.id} href={issue.html_url}>
+							<div>
+								<strong>{issue.title}</strong>
+								<p>{issue.user.login}</p>
+							</div>
+							<FiChevronRight size={20} />
+						</a>
+					);
+				})}
 			</Issues>
 		</>
 	);
