@@ -52,7 +52,7 @@ export const Form = styled.form<FormProps>`
 		transition: background-color 0.2s;
 
 		&:hover {
-			background: ${shade(0.08, '#04d361')};
+			background: ${shade(0.2, '#04d361')};
 		}
 	}
 `;
@@ -66,16 +66,17 @@ export const Error = styled.span`
 export const Repositories = styled.div`
 	margin-top: 120px;
 	max-width: 715px;
+
 	a {
 		background: #fff;
 		border-radius: 5px;
 		width: 100%;
 		padding: 24px;
-		display: block;
 		text-decoration: none;
 
 		display: flex;
 		align-items: center;
+
 		transition: 0.2s;
 
 		& + a {
@@ -84,6 +85,7 @@ export const Repositories = styled.div`
 
 		&:hover {
 			transform: translateX(10px);
+
 			& svg {
 				color: ${darken(0.2, '#cbcbd6')};
 			}
