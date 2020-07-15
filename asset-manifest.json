@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/stevescruz/explore_github/static/js/main.841bb744.chunk.js",
-    "main.js.map": "/stevescruz/explore_github/static/js/main.841bb744.chunk.js.map",
-    "runtime-main.js": "/stevescruz/explore_github/static/js/runtime-main.1fe2997b.js",
-    "runtime-main.js.map": "/stevescruz/explore_github/static/js/runtime-main.1fe2997b.js.map",
-    "static/js/2.2a6ccb8e.chunk.js": "/stevescruz/explore_github/static/js/2.2a6ccb8e.chunk.js",
-    "static/js/2.2a6ccb8e.chunk.js.map": "/stevescruz/explore_github/static/js/2.2a6ccb8e.chunk.js.map",
-    "index.html": "/stevescruz/explore_github/index.html",
-    "precache-manifest.13b23ecfb964ad7210d15fe86a989c9f.js": "/stevescruz/explore_github/precache-manifest.13b23ecfb964ad7210d15fe86a989c9f.js",
-    "service-worker.js": "/stevescruz/explore_github/service-worker.js",
-    "static/js/2.2a6ccb8e.chunk.js.LICENSE.txt": "/stevescruz/explore_github/static/js/2.2a6ccb8e.chunk.js.LICENSE.txt",
-    "static/media/github-background.svg": "/stevescruz/explore_github/static/media/github-background.0b819d63.svg",
-    "static/media/logo.svg": "/stevescruz/explore_github/static/media/logo.04f6798f.svg"
+    "main.js": "/explore_github/static/js/main.841bb744.chunk.js",
+    "main.js.map": "/explore_github/static/js/main.841bb744.chunk.js.map",
+    "runtime-main.js": "/explore_github/static/js/runtime-main.5e1ab633.js",
+    "runtime-main.js.map": "/explore_github/static/js/runtime-main.5e1ab633.js.map",
+    "static/js/2.b74af982.chunk.js": "/explore_github/static/js/2.b74af982.chunk.js",
+    "static/js/2.b74af982.chunk.js.map": "/explore_github/static/js/2.b74af982.chunk.js.map",
+    "index.html": "/explore_github/index.html",
+    "precache-manifest.4986b6f2ef8c38b6692f6218be9eb8e1.js": "/explore_github/precache-manifest.4986b6f2ef8c38b6692f6218be9eb8e1.js",
+    "service-worker.js": "/explore_github/service-worker.js",
+    "static/js/2.b74af982.chunk.js.LICENSE.txt": "/explore_github/static/js/2.b74af982.chunk.js.LICENSE.txt",
+    "static/media/github-background.svg": "/explore_github/static/media/github-background.0b819d63.svg",
+    "static/media/logo.svg": "/explore_github/static/media/logo.04f6798f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1fe2997b.js",
-    "static/js/2.2a6ccb8e.chunk.js",
+    "static/js/runtime-main.5e1ab633.js",
+    "static/js/2.b74af982.chunk.js",
     "static/js/main.841bb744.chunk.js"
   ]
 }
