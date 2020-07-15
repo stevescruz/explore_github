@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/stevescruz/explore_github/static/js/main.841bb744.chunk.js",
+    "main.js.map": "/stevescruz/explore_github/static/js/main.841bb744.chunk.js.map",
+    "runtime-main.js": "/stevescruz/explore_github/static/js/runtime-main.1fe2997b.js",
+    "runtime-main.js.map": "/stevescruz/explore_github/static/js/runtime-main.1fe2997b.js.map",
+    "static/js/2.2a6ccb8e.chunk.js": "/stevescruz/explore_github/static/js/2.2a6ccb8e.chunk.js",
+    "static/js/2.2a6ccb8e.chunk.js.map": "/stevescruz/explore_github/static/js/2.2a6ccb8e.chunk.js.map",
+    "index.html": "/stevescruz/explore_github/index.html",
+    "precache-manifest.13b23ecfb964ad7210d15fe86a989c9f.js": "/stevescruz/explore_github/precache-manifest.13b23ecfb964ad7210d15fe86a989c9f.js",
+    "service-worker.js": "/stevescruz/explore_github/service-worker.js",
+    "static/js/2.2a6ccb8e.chunk.js.LICENSE.txt": "/stevescruz/explore_github/static/js/2.2a6ccb8e.chunk.js.LICENSE.txt",
+    "static/media/github-background.svg": "/stevescruz/explore_github/static/media/github-background.0b819d63.svg",
+    "static/media/logo.svg": "/stevescruz/explore_github/static/media/logo.04f6798f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1fe2997b.js",
+    "static/js/2.2a6ccb8e.chunk.js",
+    "static/js/main.841bb744.chunk.js"
+  ]
+}
