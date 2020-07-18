@@ -2,6 +2,7 @@ import React, { useState, useEffect, FormEvent } from 'react';
 import { FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
+import isDuplicateRepository from '../../services/isDuplicateRepository';
 
 import logoImg from '../../assets/logo.svg';
 import { Title, Form, Error, Repositories } from './styles';
@@ -42,6 +43,10 @@ const Dashboard: React.FC = () => {
 
 		if (!newRepository) {
 			setInputError('Type the owner/name of the repository.');
+			return;
+		}
+		if (isDuplicateRepository(repositories, newRepository)) {
+			setInputError('This repository was already added.');
 			return;
 		}
 		try {
