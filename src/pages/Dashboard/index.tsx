@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import api from '../../services/api';
 import isDuplicateRepository from '../../services/isDuplicateRepository';
 
-import logoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/logo.png';
 import { Title, Form, Error, Repositories } from './styles';
 
 interface Repository {

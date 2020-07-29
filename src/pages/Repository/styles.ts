@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { darken } from 'polished';
+import { shade, darken } from 'polished';
 
 export const Header = styled.header`
 	display: flex;
@@ -100,13 +100,22 @@ export const Issues = styled.div`
 		&:hover {
 			transform: translateX(10px);
 
-			& svg {
+			& svg:first-of-type {
+				color: ${shade(0.2, '#c53030')};
+			}
+
+			& svg:last-of-type {
 				color: ${darken(0.2, '#cbcbd6')};
 			}
 		}
 
 		& + a {
 			margin-top: 16px;
+		}
+
+		svg:first-of-type {
+			color: #c53030;
+			margin-right: 24px;
 		}
 
 		div {
@@ -125,7 +134,7 @@ export const Issues = styled.div`
 			}
 		}
 
-		svg {
+		svg:last-of-type {
 			color: #cbcbd6;
 			margin-left: auto;
 		}

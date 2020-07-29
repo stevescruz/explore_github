@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useRouteMatch } from 'react-router-dom';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { FiAlertOctagon, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import api from '../../services/api';
 
-import logoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/logo.png';
 
 import { Header, RepositorySummary, Issues } from './styles';
 
@@ -88,6 +88,7 @@ const Repository: React.FC = () => {
 				{issues.map(issue => {
 					return (
 						<a key={issue.id} href={issue.html_url}>
+							<FiAlertOctagon size={20} />
 							<div>
 								<strong>{issue.title}</strong>
 								<p>{issue.user.login}</p>
