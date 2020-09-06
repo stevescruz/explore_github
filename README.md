@@ -55,7 +55,7 @@ My objective with this project is to demonstrate that I can integrate an applica
   - [x] Display Repository information & avatar
   - [x] Display Stars, Forks & Open Issues count.
   - [x] Display Issues
-  - [x] Link an Issue to the original issue's page at GitHub
+  - [x] Link an Issue to the original issues' page at GitHub
 - [ ] Additional Features
   - [ ] Dark Mode Theme
   - [ ] Repositories Pagination
@@ -82,7 +82,7 @@ This project was developed with the following technologies:
 
 To access the deployed website [click here](https://stevescruz.github.io/explore_github/).
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [ReactJS 16.13.1](https://reactjs.org/) (or higher), and [Yarn v1.13][yarn] (or
+To clone and run this application, you need [Git](https://git-scm.com), [ReactJS 16.13.1](https://reactjs.org/) (or higher), and [Yarn v1.13][yarn] (or
 higher) installed on your computer. From your command line:
 
 ```bash
